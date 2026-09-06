@@ -1,1 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - minimaper</title>
+    <style>
+        :root {
+            --bg-color: #0F172A;
+            --card-bg: #1E293B;
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+            --accent-color: #FF7700;
+            --accent-gradient: linear-gradient(135deg, #FF7700 0%, #FF9933 100%);
+            --border-color: #334155;
+            --highlight-bg: rgba(255, 119, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            padding: 40px 32px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .brand-title {
+            font-size: 28px;
+            font-weight: 800;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .app-sub {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        .lang-switch {
+            display: flex;
+            background-color: #0F172A;
+            border-radius: 8px;
+            padding: 4px;
+            border: 1px solid var(--border-color);
+        }
+
+        .lang-btn {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            padding: 6px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn.active {
+            background-color: var(--accent-color);
+            color: #FFFFFF;
+        }
+
+        .badge-date {
+            display: inline-block;
+            background: var(--highlight-bg);
+            color: var(--accent-color);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #FFFFFF;
+            margin: 28px 0 12px 0;
+            padding-left: 12px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 14px;
+            font-size: 15px;
+        }
+
+        ul {
+            margin: 10px 0 18px 24px;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background-color: rgba(255, 119, 0, 0.06);
+            border: 1px solid rgba(255, 119, 0, 0.2);
+            border-radius: 10px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: #E2E8F0;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div>
+            <div class="brand-title">minimaper</div>
+            <div class="app-sub">Game Minimap Magnifier & Touch Sync Overlay</div>
+        </div>
+        <div class="lang-switch">
+            <button class="lang-btn active" id="btnKo" onclick="switchLanguage('ko')">한국어</button>
+            <button class="lang-btn" id="btnEn" onclick="switchLanguage('en')">English</button>
+        </div>
+    </header>
+
+    <!-- 한국어 내용 -->
+    <div id="contentKo" class="content-section active">
+        <span class="badge-date">최종 개정일: 2026년 9월 7일</span>
+
+        <p><strong>minimaper</strong>(이하 "앱")는 사용자의 개인정보를 소중히 여기며, 관련 법령 및 구글 플레이(Google Play) 개발자 정책을 엄격히 준수합니다. 본 개인정보처리방침은 앱이 어떠한 정보를 취급하고 어떻게 보호하는지 명확히 안내해 드립니다.</p>
+
+        <h2>1. 수집하는 개인정보</h2>
+        <p>본 앱은 회원가입이나 로그인을 요구하지 않으며, <strong>사용자의 어떠한 개인 식별 정보(이름, 이메일, 전화번호, 연락처, 기기 고유식별자 등)도 수집하거나 외부 서버로 전송하지 않습니다.</strong></p>
+
+        <h2>2. 접근 권한 및 사용 목적 (Google Play 정책 준수)</h2>
+        <p>앱의 원활한 핵심 기능 제공을 위해 다음 권한을 사용하며, 모든 작업은 사용자의 기기 내부(Local RAM)에서만 실시간 처리됩니다.</p>
+        
+        <div class="highlight-box">
+            <p><strong>화면 녹화/캡처 권한 (MediaProjection API / 포그라운드 서비스)</strong></p>
+            <ul>
+                <li><strong>사용 목적:</strong> 게임 화면 중 사용자가 지정한 미니맵 영역(ROI)을 실시간으로 캡처하여 플로팅 오버레이 창에 확대 표시하기 위해 사용됩니다.</li>
+                <li><strong>데이터 처리:</strong> 캡처된 화면 데이터는 오직 기기 메모리에서 실시간 렌더링에만 사용되며, <strong>파일로 저장되거나 네트워크를 통해 외부로 전송되지 않습니다.</strong></li>
+            </ul>
+        </div>
+
+        <div class="highlight-box">
+            <p><strong>접근성 서비스 권한 (AccessibilityService API - 명시적 공개)</strong></p>
+            <ul>
+                <li><strong>사용 목적:</strong> 사용자가 확대된 오버레이 창을 터치/드래그했을 때, 해당 좌표를 실제 게임 화면의 원본 미니맵 위치로 터치(탭) 제스처를 전달(주입)하기 위해서만 사용됩니다.</li>
+                <li><strong>데이터 처리:</strong> 화면의 텍스트, 사용자 입력, 개인정보 등을 감시하거나 읽지 않으며, 터치 좌표 전달 외 어떠한 용도로도 사용되지 않습니다.</li>
+            </ul>
+        </div>
+
+        <div class="highlight-box">
+            <p><strong>다른 앱 위에 표시 (SYSTEM_ALERT_WINDOW)</strong></p>
+            <ul>
+                <li><strong>사용 목적:</strong> 게임 플레이 도중 게임 화면을 가리지 않고 자유롭게 크기와 위치를 조절할 수 있는 플로팅 미니맵 창을 띄우기 위해 사용됩니다.</li>
+            </ul>
+        </div>
+
+        <h2>3. 제3자 서비스 및 SDK 사용</h2>
+        <p>앱의 서비스 제공, 성능 분석 및 안정성 개선을 위해 Google에서 제공하는 검증된 외부 SDK를 포함하고 있습니다. 각 제공사의 개인정보처리방침은 아래 링크에서 확인하실 수 있습니다.</p>
+        <ul>
+            <li><strong>Google AdMob:</strong> 인앱 광고 제공 (광고 식별자 및 비식별 진단 데이터 활용) - <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+            <li><strong>Google Play Billing:</strong> PRO 버전 인앱 결제 처리 (결제 정보는 구글 시스템이 안전하게 처리하며 개발사는 카드 번호 등을 수집하지 않음)</li>
+            <li><strong>Firebase Analytics & Crashlytics:</strong> 앱 오류 분석 및 안정성 모니터링 (익명화된 통계 데이터)</li>
+        </ul>
+
+        <h2>4. 로컬 데이터 저장</h2>
+        <p>사용자가 설정한 미니맵 캡처 좌표, 창 크기, 투명도, 주사율 설정 등은 사용자의 편의를 위해 기기 내부 로컬 저장소(SharedPreferences)에만 저장되며, 앱 삭제 시 함께 제거됩니다.</p>
+
+        <h2>5. 문의처</h2>
+        <p>개인정보 처리와 관련하여 문의사항이나 의견이 있으신 경우 아래 연락처로 문의해 주시기 바랍니다.</p>
+        <ul>
+            <li><strong>앱 이름:</strong> minimaper</li>
+            <li><strong>개발자/지원 문의:</strong> <a href="mailto:p_kyu13@naver.com">p_kyu13@naver.com</a></li>
+        </ul>
+    </div>
+
+    <!-- English Version -->
+    <div id="contentEn" class="content-section">
+        <span class="badge-date">Last Updated: September 7, 2026</span>
+
+        <p><strong>minimaper</strong> ("the App") respects your privacy and strictly adheres to applicable privacy laws and Google Play Developer Policies. This Privacy Policy explains what information the App handles and how it is protected.</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>The App does not require registration or login. <strong>We do not collect, store, or transmit any personally identifiable information (such as name, email, phone number, contacts, or device identifiers) to external servers.</strong></p>
+
+        <h2>2. Device Permissions and Usage (Google Play Compliance)</h2>
+        <p>The App requests specific permissions strictly required for its core features. All processing takes place entirely locally within your device's memory.</p>
+
+        <div class="highlight-box">
+            <p><strong>Screen Capture Permission (MediaProjection API / Foreground Service)</strong></p>
+            <ul>
+                <li><strong>Purpose:</strong> To capture the user-defined minimap region of interest (ROI) from your game screen in real time and magnify it in a floating overlay window.</li>
+                <li><strong>Data Handling:</strong> Captured frames are rendered live in volatile memory (RAM) only. <strong>No screenshots or video recordings are saved to storage or transmitted over the internet.</strong></li>
+            </ul>
+        </div>
+
+        <div class="highlight-box">
+            <p><strong>Accessibility Service (AccessibilityService API - Prominent Disclosure)</strong></p>
+            <ul>
+                <li><strong>Purpose:</strong> Used exclusively to relay (inject) tap and drag touch gestures from the magnified overlay window directly to the corresponding game minimap position on the screen.</li>
+                <li><strong>Data Handling:</strong> The App DOES NOT monitor, inspect, or log your keystrokes, personal data, on-screen text, or passwords. It is used solely for touch gesture dispatching.</li>
+            </ul>
+        </div>
+
+        <div class="highlight-box">
+            <p><strong>Display Over Other Apps (SYSTEM_ALERT_WINDOW)</strong></p>
+            <ul>
+                <li><strong>Purpose:</strong> To render the movable, resizable floating minimap overlay on top of active games.</li>
+            </ul>
+        </div>
+
+        <h2>3. Third-Party Services and SDKs</h2>
+        <p>The App incorporates standard, trusted third-party SDKs provided by Google for monetization, analytics, and billing:</p>
+        <ul>
+            <li><strong>Google AdMob:</strong> For delivering banner and interstitial ads. Uses advertising ID and anonymized diagnostic data. - <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+            <li><strong>Google Play Billing:</strong> For secure in-app purchases (PRO upgrade). Payment information is handled securely by Google; we never see or store your payment details.</li>
+            <li><strong>Firebase Analytics & Crashlytics:</strong> For crash diagnostics and performance optimization (anonymous metrics).</li>
+        </ul>
+
+        <h2>4. Local Data Storage</h2>
+        <p>Your user settings—such as minimap crop boundaries, overlay position, opacity, and frame rate—are stored locally on your device via SharedPreferences and are deleted when the app is uninstalled.</p>
+
+        <h2>5. Contact Us</h2>
+        <p>If you have any questions or suggestions regarding this Privacy Policy, please contact:</p>
+        <ul>
+            <li><strong>App Name:</strong> minimaper</li>
+            <li><strong>Developer Email:</strong> <a href="mailto:p_kyu13@naver.com">p_kyu13@naver.com</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        &copy; 2026 minimaper. All rights reserved.
+    </footer>
+</div>
+
+<script>
+    function switchLanguage(lang) {
+        document.getElementById('contentKo').classList.toggle('active', lang === 'ko');
+        document.getElementById('contentEn').classList.toggle('active', lang === 'en');
+        document.getElementById('btnKo').classList.toggle('active', lang === 'ko');
+        document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+    }
+</script>
+
+</body>
+</html>
 
